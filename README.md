@@ -68,7 +68,7 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
    - ระบบแลกเปลี่ยน
        * ผู้ใช้ สามารถโอนเหรียญ กันได้ โดย Log จะเก็บบันทึกการโอนของผู้ใช้งาน
   
-# API & TESTING
+# API & TEST BY POSTMAN
 
 ![image](https://github.com/user-attachments/assets/b8d43cc5-a2b4-4b89-85ad-2eb132486cb6)
 
