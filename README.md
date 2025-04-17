@@ -30,6 +30,9 @@
 
 ```
 DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
+
+กำหนด รหัสผ่านและผู้ใช้ DB -> Crypto
+
 ```
 
 # ภาษาและ Lib ที่ใช้งานหลัก
