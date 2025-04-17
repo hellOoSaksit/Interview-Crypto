@@ -70,6 +70,22 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
   
 # API & TESTING
 
+![image](https://github.com/user-attachments/assets/b8d43cc5-a2b4-4b89-85ad-2eb132486cb6)
+
+## ระบบ Register 
+```
+http://localhost:5000/auth/register
+```
+ตัวอย่างข้อมูลที่ใส่
+
+```
+{
+    "email" : "Buying_Start@gmail.com",
+    "password" : "0000",
+    "username" : "Buying"
+}
+```
+
 
 
 
