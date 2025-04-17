@@ -73,9 +73,11 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 ![image](https://github.com/user-attachments/assets/b8d43cc5-a2b4-4b89-85ad-2eb132486cb6)
 
 ## ระบบ Register 
+
 ```
 http://localhost:5000/auth/register
 ```
+
 ###ตัวอย่างข้อมูลที่ใส่
 
 ```
@@ -87,9 +89,11 @@ http://localhost:5000/auth/register
 ```
 
 ###ข้อมูลตอบกลับ
-![image](https://github.com/user-attachments/assets/3c4af766-9ea0-4d49-877c-98e27f64371b)
+
+![image](https://github.com/user-attachments/assets/130ad1f9-bad0-4623-8092-2f535e949d61)
 
 ###หากมีผู้ใช้ซ้ำ 
+
 ![image](https://github.com/user-attachments/assets/6b9e4251-be73-467b-a23f-77784d286831)
 
 
