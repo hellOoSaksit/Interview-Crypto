@@ -59,6 +59,30 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 - ใช้ OrderID ในการอ้างอิง (ไม่ใช้ WalletID เนื่องจากข้อมูลอาจถูกลบ)  
 - ระบบโอนเหรียญสามารถบันทึก Log ได้ ทั้งโอนภายในและภายนอกระบบ
 
+## 🔌 API ทั้งหมด
+```
+Register         : http://localhost:5000/auth/register
+
+Login            : http://localhost:5000/auth/login
+
+GetProfile       : http://localhost:5000/member/profile
+
+TopUp            : http://localhost:5000/member/topup
+
+Exchange         : http://localhost:5000/member/wallet/exchange
+
+TradeSeller      : http://localhost:5000/member/trade/sell
+
+TradeBuying      : http://localhost:5000/member/trade/buy
+
+Transaction      : http://localhost:5000/member/wallet/transaction
+
+GetOrderAll      : http://localhost:5000/member/order
+
+GetWalletProfile : http://localhost:5000/member/wallet/profile
+```
+
+
 ## 🔌 API ตัวอย่าง (Test ผ่าน Postman)
 
 ### ✅ Register
