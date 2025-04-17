@@ -177,6 +177,34 @@ POST   http://localhost:5000/member/topup
 ![image](https://github.com/user-attachments/assets/7bd112a0-2851-4dbb-af2c-aa3e85dcf5ab)
 
 
+
+
+### 📝 GetOrder
+
+**Endpoint**
+```
+GET     http://localhost:5000/member/order
+```
+
+
+**Response**
+
+![image](https://github.com/user-attachments/assets/fd344e7e-58c3-4370-ad74-798062057963)
+
+### 💳 GetWallet
+
+**Endpoint**
+```
+GET    http://localhost:5000/member/wallet/profile
+```
+
+
+**Response**
+
+![image](https://github.com/user-attachments/assets/8932d68d-b6d5-42f5-b98c-ec0838606877)
+
+
+
 ### 💳 Exchange
 
 **Endpoint**
