@@ -158,6 +158,18 @@ GET  http://localhost:5000/member/profile
 GET   http://localhost:5000/member/topup
 ```
 
+**Body**
+```
+{
+    "currency_code" : "THB", 
+    "amount" : 1000000
+}
+
+
+```
+> 💡 **currency_code** : `เลือกว่าจะเติม THB หรือ USD เท่านั้น`
+> 💡 **amount**: `จำนวนการเติม`  
+
 **Response**
 
 ![image](https://github.com/user-attachments/assets/7bd112a0-2851-4dbb-af2c-aa3e85dcf5ab)
