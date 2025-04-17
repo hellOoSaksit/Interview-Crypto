@@ -31,3 +31,21 @@
 ```
 DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 ```
+
+# ภาษาและ Lib ที่ใช้งานหลัก
+- Nest.Js
+- Prisma
+- decimal.js
+
+#ER diagram
+```
+ LINK : https://dbdiagram.io/d/Interview-67ff891e1ca52373f539090b
+```
+
+
+![ER](https://github.com/user-attachments/assets/9868114d-8f67-4933-981b-3a5a040388e3)
+
+
+
+
+
