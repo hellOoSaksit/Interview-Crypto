@@ -76,7 +76,7 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 ```
 http://localhost:5000/auth/register
 ```
-ตัวอย่างข้อมูลที่ใส่
+###ตัวอย่างข้อมูลที่ใส่
 
 ```
 {
@@ -85,6 +85,14 @@ http://localhost:5000/auth/register
     "username" : "Buying"
 }
 ```
+
+###ข้อมูลตอบกลับ
+![image](https://github.com/user-attachments/assets/3c4af766-9ea0-4d49-877c-98e27f64371b)
+
+###หากมีผู้ใช้ซ้ำ 
+![image](https://github.com/user-attachments/assets/6b9e4251-be73-467b-a23f-77784d286831)
+
+
 
 
 
