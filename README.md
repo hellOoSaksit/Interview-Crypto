@@ -236,7 +236,78 @@ POST    http://localhost:5000/member/trade/sell
 
 
 **Response**
+
 ![image](https://github.com/user-attachments/assets/43faf69d-d6ba-420e-a259-3a51094b84a6)
+
+### ⚖️ TradeBuying
+
+**Endpoint**
+```
+POST    http://localhost:5000/member/trade/buy
+```
+
+**Body**
+```
+{
+    "seller_wallet_id" :"00000000-0000-0000-0000-000000000000",
+    "currency" : "BTC",
+    "amount" : 1
+}
+```
+> 💡 **seller_wallet_id** : `Wallet ที่ต้องการซื้อ (คนขาย)`
+
+> 💡 **currency**: `ประเภทเหรียญ  เช่น XRP , ETH , BTC , DOGE ` 
+
+> 💡 **amount**: `จำนวนเงินที่ซื้อ`
+
+
+
+**Response**
+ผู้ใช้ไม่สามารถซื้อ เหรียญตัวเองได้
+
+![image](https://github.com/user-attachments/assets/deb8ed69-28fb-458c-8339-22ee22a96bb3)
+
+ผู้ซื้อมีเงิน USD มากพอสามารถซื้อได้
+
+![image](https://github.com/user-attachments/assets/352e8a73-551d-4a30-8c32-567de9acb9df)
+
+ผู้ซื้อมีเงินไม่มากพอ
+
+![image](https://github.com/user-attachments/assets/13d47793-26ce-4c7e-9600-cb22dc2656a0)
+
+### ⚖️ Transaction
+
+**Endpoint**
+```
+POST    http://localhost:5000/member/wallet/transaction
+```
+
+**Body**
+```
+{
+    "to_wallet_id" : "00000000-0000-0000-0000-000000000000",
+    "currency_code" : "BTC",
+    "amount" : 1
+}
+```
+> 💡 **seller_wallet_id** : `Wallet ที่ต้องการโอนเงิน`
+
+> 💡 **currency**: `ประเภทเหรียญ  เช่น XRP , ETH , BTC , DOGE ` 
+
+> 💡 **amount**: `จำนวนเหรียญที่โอน`
+
+
+
+**Response**
+หากผู้โอนมีเหรียญมากพอ
+
+![image](https://github.com/user-attachments/assets/32fff6dc-01a0-4163-b0ca-53ae3a8b511b)
+
+หากผู้โอนมีเหรียญไม่มากพอ
+
+![image](https://github.com/user-attachments/assets/d9cb5ebf-3f67-46ee-9162-269dc237b35a)
+
+
 
 ---
 
