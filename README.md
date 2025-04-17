@@ -101,7 +101,7 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 
 ![image](https://github.com/user-attachments/assets/b5c1a2af-d85f-411a-9d7b-4734d881e535)
 
-ข้อมูลที่ควนมีใน Transaction_History
+ข้อมูลที่ควรมีใน Transaction_History
 
 ![image](https://github.com/user-attachments/assets/51352bc6-d963-4082-8ee1-26cb66dcb582)
 
