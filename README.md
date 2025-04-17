@@ -61,25 +61,29 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 
 ## 🔌 API ทั้งหมด
 ```
-Register            [POST]         : http://localhost:5000/auth/register
+Register                  [POST]         : http://localhost:5000/auth/register
 
-Login               [POST]         : http://localhost:5000/auth/login
+Login                     [POST]         : http://localhost:5000/auth/login
 
-GetProfile          [GET]          : http://localhost:5000/member/profile
+GetProfile                [GET]          : http://localhost:5000/member/profile
 
-TopUp               [POST]         : http://localhost:5000/member/topup
+TopUp                     [POST]         : http://localhost:5000/member/topup
 
-Exchange            [POST]         : http://localhost:5000/member/wallet/exchange
+Exchange                  [POST]         : http://localhost:5000/member/wallet/exchange
 
-TradeSeller         [POST]         : http://localhost:5000/member/trade/sell
+TradeSeller               [POST]         : http://localhost:5000/member/trade/sell
 
-TradeBuying         [POST]         : http://localhost:5000/member/trade/buy
+TradeBuying               [POST]         : http://localhost:5000/member/trade/buy
 
-Transaction         [POST]         : http://localhost:5000/member/wallet/transaction
+Transaction               [POST]         : http://localhost:5000/member/wallet/transaction
 
-GetOrderAll         [GET]          : http://localhost:5000/member/order
+GetOrderAll               [GET]          : http://localhost:5000/member/order
 
-GetWalletProfile    [GET]          : http://localhost:5000/member/wallet/profile
+GetWalletProfile          [GET]          : http://localhost:5000/member/wallet/profile
+
+GetTransaction_History    [GET]          : http://localhost:5000/member/TransactionHistory
+
+GetOrder_History          [GET]          : http://localhost:5000/member/orderHistory
 ```
 
 
@@ -191,17 +195,30 @@ GET     http://localhost:5000/member/order
 
 ![image](https://github.com/user-attachments/assets/fd344e7e-58c3-4370-ad74-798062057963)
 
-### 💳 GetWallet
+### 📝 GetTransaction History
 
 **Endpoint**
 ```
-GET    http://localhost:5000/member/wallet/profile
+GET    http://localhost:5000/member/TransactionHistory
+```
+![image](https://github.com/user-attachments/assets/eea3fb7d-c92f-486a-bbb5-2f26aa253f89)
+
+
+
+
+**Response**
+
+### 💳 GetOrder History
+
+**Endpoint**
+```
+GET   http://localhost:5000/member/orderHistory
 ```
 
 
 **Response**
 
-![image](https://github.com/user-attachments/assets/8932d68d-b6d5-42f5-b98c-ec0838606877)
+![image](https://github.com/user-attachments/assets/71bd1c91-3842-4fe2-bae1-6d36a29efaf7)
 
 
 
