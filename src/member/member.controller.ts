@@ -77,11 +77,23 @@ export class MemberController {
   }
 
   @UseGuards(JwtAuthGuard)
-  @Post('wallet/profile')
+  @Get('wallet/profile')
   async GetWallet(@Request() req) 
   {
     const userWallet = req.user.wallet;
     return await this.memberService.getWallet(userWallet);
+  }
+
+  @Get('orderHistory')
+  async getOrderHistory() 
+  {
+    return await this.memberService.getOrderHistory();
+  }
+
+  @Get('TransactionHistory')
+  async getTransaction() 
+  {
+    return await this.memberService.getTransactionHistory();
   }
 
 }

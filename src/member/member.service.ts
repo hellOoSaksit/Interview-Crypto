@@ -10,8 +10,19 @@ export class MemberService {
   async getOrder()
   {
     const ResultOrder = await this.prisma.order.findMany();
-    console.log(ResultOrder)
     return ResultOrder;
+  }
+
+  async getOrderHistory()
+  {
+    const ResultOrder = await this.prisma.order_History.findMany();
+    return ResultOrder;
+  }
+
+  async getTransactionHistory()
+  {
+    const ResultTransaction = await this.prisma.transaction_History.findMany();
+    return ResultTransaction;
   }
 
   async getWallet(wallet:string)
