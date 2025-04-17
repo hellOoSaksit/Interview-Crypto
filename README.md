@@ -1,4 +1,4 @@
-# 🪙 Crypto Exchange System
+![image](https://github.com/user-attachments/assets/d5453ccc-af11-4beb-a029-7b9526843bda)# 🪙 Crypto Exchange System
 
 ## 🗂️ About Project
 
@@ -66,6 +66,48 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 3. npm i
 4. npx prisma generate
 ```
+## ขั้นตอนการSQL (PostgreSql)
+1. สร้าง Database
+   
+![image](https://github.com/user-attachments/assets/617ed4a5-142c-4079-b959-59a6c91ea794)
+
+2.เลือก Restore
+
+![image](https://github.com/user-attachments/assets/a59d1d69-f0f6-4f3d-9446-7b6de57738ed)
+
+3.เลือกที่อยู่ไฟล์ (อยู่ใน โฟเดอร์ SQL ) และกด Restore
+
+![image](https://github.com/user-attachments/assets/cea1add0-9d21-4e4c-b5c6-96846f62e814)
+
+4.ตรวจสอบข้อมูลเริ่มต้น
+
+**shasma**  ที่ควนมี
+
+![image](https://github.com/user-attachments/assets/15a832e0-84c1-4b35-84d7-9aa5506999aa)
+
+ข้อมูลที่ควรมีใน Currency
+
+![image](https://github.com/user-attachments/assets/82f8998f-081f-41d4-9338-5d3890fd3015)
+
+ข้อมูลที่ควรมีใน Order
+
+![image](https://github.com/user-attachments/assets/bf2a5b95-d4ad-4b7a-b235-753201ffc622)
+
+ข้อมูลที่ควรมีใน Order_History
+
+![image](https://github.com/user-attachments/assets/b5c1a2af-d85f-411a-9d7b-4734d881e535)
+
+ข้อมูลที่ควนมีใน Transaction_History
+
+![image](https://github.com/user-attachments/assets/51352bc6-d963-4082-8ee1-26cb66dcb582)
+
+ข้อมูลที่ควรมีใน User
+
+![image](https://github.com/user-attachments/assets/e1ba232c-9c55-4d7b-a7ab-e0b113cdb80c)
+
+ช้อมูลที่ควรมีใน Wallet
+
+![image](https://github.com/user-attachments/assets/3b3a0030-29f9-4909-81f4-de7d8d03548e)
 
 
 ## 🔌 API ทั้งหมด
