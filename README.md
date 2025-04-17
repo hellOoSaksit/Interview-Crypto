@@ -14,7 +14,8 @@
 
 นำ ER Diagram จากข้อ 1 มาเขียนโดยใช้ Node.js หรือ PHP
 
-- เขียน Method ใน Model เพื่อดึงข้อมูลของ Model อื่นๆที่ความสัมพันธ์กัน ตัวอย่าง https://laravel.com/docs/8.x/eloquent-relationships#one-to-many
+- เขียน Method ใน Model เพื่อดึงข้อมูลของ Model อื่นๆที่ความสัมพันธ์กัน ตัวอย่าง
+  https://laravel.com/docs/8.x/eloquent-relationships#one-to-many
 - เขียน Controller และ Routing ในส่วนหลักๆของระบบ ไม่จำเป็นต้องทำทั้งหมด
 - สร้างไฟล์สำหรับ Seed ข้อมูล เพื่อใช้ในการทดสอบ
 
