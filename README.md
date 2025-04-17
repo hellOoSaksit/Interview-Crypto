@@ -23,9 +23,9 @@
 
 ## ⚙️ .ENV ที่ใช้เชื่อมต่อ Database
 
-\`\`\`env
+```
 DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
-\`\`\`
+```
 
 > 💡 **Username**: `postgres`  
 > 💡 **Password**: `postgres`  
@@ -64,18 +64,18 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 ### ✅ Register
 
 **Endpoint**
-\`\`\`http
+```
 POST http://localhost:5000/auth/register
-\`\`\`
+```
 
 **Body**
-\`\`\`json
+```
 {
     "email": "Buying_Start@gmail.com",
     "password": "0000",
     "username": "Buying"
 }
-\`\`\`
+```
 
 **Response**
 ![register-success](https://github.com/user-attachments/assets/130ad1f9-bad0-4623-8092-2f535e949d61)
@@ -86,17 +86,17 @@ POST http://localhost:5000/auth/register
 ### 🔐 Login
 
 **Endpoint**
-\`\`\`http
+```
 POST http://localhost:5000/auth/login
-\`\`\`
+```
 
 **Body**
-\`\`\`json
+```
 {
     "email": "Buying_Start@gmail.com",
     "password": "0000"
 }
-\`\`\`
+```
 
 **Response**
 ![login-success](https://github.com/user-attachments/assets/fe0c2c6b-70e2-43ac-a7e7-94752cae9307)
