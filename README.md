@@ -146,13 +146,23 @@ POST http://localhost:5000/auth/login
 GET  http://localhost:5000/member/profile
 ```
 
-**Body**
+**Response**
+
+![image](https://github.com/user-attachments/assets/c691b773-e610-46a8-9845-a0bd3b030400)
+
+
+### 💳 TopUp
+
+**Endpoint**
 ```
-{
-    "email": "Buying_Start@gmail.com",
-    "password": "0000"
-}
+GET   http://localhost:5000/member/topup
 ```
+
+**Response**
+
+![image](https://github.com/user-attachments/assets/7bd112a0-2851-4dbb-af2c-aa3e85dcf5ab)
+
+
 
 
 ---
