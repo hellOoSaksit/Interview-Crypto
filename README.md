@@ -65,6 +65,9 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 2. cd Interview-Crypto
 3. npm i
 4. npx prisma generate
+5. ติดตั้ง DATABASE ตามข้างล่าง
+6. ตั้งค่า SQL ที่ไฟล์ .env
+7. nest start --watch
 ```
 ## ขั้นตอนการSQL (PostgreSql)
 1. สร้าง Database
