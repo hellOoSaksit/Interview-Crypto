@@ -54,10 +54,10 @@ export class RegisterService {
                 throw error;
             }
             
-            if (error instanceof Prisma.PrismaClientKnownRequestError) {
-                console.error('Prisma Error:', error.code, error.meta);
-                throw new HttpException('เกิดข้อผิดพลาดในการบันทึกข้อมูล', HttpStatus.INTERNAL_SERVER_ERROR);
-            }
+            // if (error instanceof Prisma.PrismaClientKnownRequestError) {
+            //     console.error('Prisma Error:', error.code, error.meta);
+            //     throw new HttpException('เกิดข้อผิดพลาดในการบันทึกข้อมูล', HttpStatus.INTERNAL_SERVER_ERROR);
+            // }
 
             throw new HttpException(
                 'เกิดข้อผิดพลาดในการสมัครสมาชิก', 
