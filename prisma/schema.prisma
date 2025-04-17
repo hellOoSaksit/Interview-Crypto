@@ -1,0 +1,88 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["public"]
+}
+
+model Currency {
+  currency_code                       String                @id @db.VarChar
+  name                                String                @db.VarChar
+  price                               Decimal?              @db.Decimal(18, 2)
+  Order_Order_from_currencyToCurrency Order[]               @relation("Order_from_currencyToCurrency")
+  Transaction_History                 Transaction_History[]
+  Wallet                              Wallet[]
+
+  @@schema("public")
+}
+
+model Order {
+  order_id                               Int      @id @default(autoincrement())
+  wallet_id                              String   @db.Uuid
+  order_type                             String   @db.VarChar
+  from_currency                          String   @db.VarChar
+  amount                                 Decimal  @db.Decimal(38, 18)
+  price                                  Decimal  @db.Decimal(38, 2)
+  Currency_Order_from_currencyToCurrency Currency @relation("Order_from_currencyToCurrency", fields: [from_currency], references: [currency_code], onDelete: NoAction, onUpdate: NoAction)
+  Wallet                                 Wallet   @relation(fields: [wallet_id, from_currency], references: [wallet_id, currency_code], onDelete: NoAction, onUpdate: NoAction, map: "fk_wallet")
+
+  @@unique([wallet_id, from_currency])
+  @@schema("public")
+}
+
+model Wallet {
+  wallet_id                                                                    String                @db.Uuid
+  currency_code                                                                String                @db.VarChar
+  amount                                                                       Decimal               @default(0) @db.Decimal(38, 18)
+  Order                                                                        Order?
+  Transaction_History_Transaction_History_from_wallet_id_currency_codeToWallet Transaction_History[] @relation("Transaction_History_from_wallet_id_currency_codeToWallet")
+  Transaction_History_Transaction_History_to_wallet_id_currency_codeToWallet   Transaction_History[] @relation("Transaction_History_to_wallet_id_currency_codeToWallet")
+  Currency                                                                     Currency              @relation(fields: [currency_code], references: [currency_code], onDelete: NoAction, onUpdate: NoAction)
+  User                                                                         User                  @relation(fields: [wallet_id], references: [wallet_id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([wallet_id, currency_code])
+  @@schema("public")
+}
+
+model User {
+  email     String   @id @db.VarChar
+  wallet_id String   @unique @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  password  String   @db.VarChar
+  username  String   @db.VarChar
+  USD       Decimal  @default(0) @db.Decimal(38, 2)
+  THB       Decimal  @default(0) @db.Decimal(38, 2)
+  Wallet    Wallet[]
+
+  @@schema("public")
+}
+
+model Order_History {
+  history_id       Int       @id @default(autoincrement())
+  order_id         Int
+  from_wallet_id   String    @db.Uuid
+  order_type       String    @db.VarChar
+  from_currency    String    @db.VarChar
+  amount           Decimal   @db.Decimal(38, 18)
+  price            Decimal   @db.Decimal(38, 2)
+  change_timestamp DateTime? @default(now()) @db.Timestamp(6)
+  to_wallet_id     String    @db.Uuid
+
+  @@schema("public")
+}
+
+model Transaction_History {
+  transaction_id                                                  Int      @id(map: "Transaction_pkey") @default(autoincrement())
+  from_wallet_id                                                  String   @db.Uuid
+  to_wallet_id                                                    String   @db.Uuid
+  currency_code                                                   String   @db.VarChar
+  amount                                                          Decimal  @db.Decimal(38, 18)
+  Currency                                                        Currency @relation(fields: [currency_code], references: [currency_code], onDelete: NoAction, onUpdate: NoAction, map: "Transaction_currency_code_fkey")
+  Wallet_Transaction_History_from_wallet_id_currency_codeToWallet Wallet   @relation("Transaction_History_from_wallet_id_currency_codeToWallet", fields: [from_wallet_id, currency_code], references: [wallet_id, currency_code], onDelete: NoAction, onUpdate: NoAction, map: "fk_from_wallet")
+  Wallet_Transaction_History_to_wallet_id_currency_codeToWallet   Wallet   @relation("Transaction_History_to_wallet_id_currency_codeToWallet", fields: [to_wallet_id, currency_code], references: [wallet_id, currency_code], onDelete: NoAction, onUpdate: NoAction, map: "fk_to_wallet")
+
+  @@schema("public")
+}
