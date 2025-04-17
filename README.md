@@ -37,7 +37,11 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 - Prisma
 - decimal.js
 
-#ER diagram
+
+
+# ER diagram
+
+
 ```
  LINK : https://dbdiagram.io/d/Interview-67ff891e1ca52373f539090b
 ```
