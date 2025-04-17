@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d5453ccc-af11-4beb-a029-7b9526843bda)# 🪙 Crypto Exchange System
+# 🪙 Crypto Exchange System
 
 ## 🗂️ About Project
 
