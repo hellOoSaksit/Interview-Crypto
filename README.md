@@ -70,6 +70,7 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 7. nest start --watch
 ```
 ## ขั้นตอนการSQL (PostgreSql)
+
 1. สร้าง Database
    
 ![image](https://github.com/user-attachments/assets/617ed4a5-142c-4079-b959-59a6c91ea794)
