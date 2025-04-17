@@ -61,25 +61,25 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 
 ## 🔌 API ทั้งหมด
 ```
-Register         : http://localhost:5000/auth/register
+Register            [POST]         : http://localhost:5000/auth/register
 
-Login            : http://localhost:5000/auth/login
+Login               [POST]         : http://localhost:5000/auth/login
 
-GetProfile       : http://localhost:5000/member/profile
+GetProfile          [GET]          : http://localhost:5000/member/profile
 
-TopUp            : http://localhost:5000/member/topup
+TopUp               [POST]         : http://localhost:5000/member/topup
 
-Exchange         : http://localhost:5000/member/wallet/exchange
+Exchange            [POST]         : http://localhost:5000/member/wallet/exchange
 
-TradeSeller      : http://localhost:5000/member/trade/sell
+TradeSeller         [POST]         : http://localhost:5000/member/trade/sell
 
-TradeBuying      : http://localhost:5000/member/trade/buy
+TradeBuying         [POST]         : http://localhost:5000/member/trade/buy
 
-Transaction      : http://localhost:5000/member/wallet/transaction
+Transaction         [POST]         : http://localhost:5000/member/wallet/transaction
 
-GetOrderAll      : http://localhost:5000/member/order
+GetOrderAll         [GET]          : http://localhost:5000/member/order
 
-GetWalletProfile : http://localhost:5000/member/wallet/profile
+GetWalletProfile    [GET]          : http://localhost:5000/member/wallet/profile
 ```
 
 
@@ -137,6 +137,23 @@ POST http://localhost:5000/auth/login
 **JWT ภายใน Cookie**
 
 ![jwt-decode](https://github.com/user-attachments/assets/99244009-74f8-4295-a44e-5a2cd4f87d3e)
+
+
+### 🔐 Profile
+
+**Endpoint**
+```
+GET  http://localhost:5000/member/profile
+```
+
+**Body**
+```
+{
+    "email": "Buying_Start@gmail.com",
+    "password": "0000"
+}
+```
+
 
 ---
 
