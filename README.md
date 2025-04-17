@@ -155,7 +155,7 @@ GET  http://localhost:5000/member/profile
 
 **Endpoint**
 ```
-GET   http://localhost:5000/member/topup
+POST   http://localhost:5000/member/topup
 ```
 
 **Body**
@@ -168,13 +168,46 @@ GET   http://localhost:5000/member/topup
 
 ```
 > 💡 **currency_code** : `เลือกว่าจะเติม THB หรือ USD เท่านั้น`
-> 💡 **amount**: `จำนวนการเติม`  
+
+> 💡 **amount**: `จำนวนการเติม`
+
 
 **Response**
 
 ![image](https://github.com/user-attachments/assets/7bd112a0-2851-4dbb-af2c-aa3e85dcf5ab)
 
 
+### 💳 Exchange
+
+**Endpoint**
+```
+POST    http://localhost:5000/member/wallet/exchange
+```
+
+**Body**
+```
+{
+    "from_currency" : "THB",
+    "to_currency" : "USD",
+    "amount" : 10000000
+}
+```
+> 💡 **from_currency** : `ไม่สามารถเปลี่ยนได้`
+
+> 💡 **to_currency**: `ไม่สามารถเปลี่ยนได้`
+
+> 💡 **amount**: `จำนวนเงินที่เติม`
+
+
+**Response**
+
+หากยอดเงิน THB มีพอที่จะแลก
+
+![image](https://github.com/user-attachments/assets/e630122e-ac73-428b-ae57-1ea46b1bb383)
+
+หากยอดเงิน THB ไม่พอ
+
+![image](https://github.com/user-attachments/assets/139f77fa-6a66-4c55-997c-008787cfb23b)
 
 
 ---
