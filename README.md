@@ -59,6 +59,15 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
 - ใช้ OrderID ในการอ้างอิง (ไม่ใช้ WalletID เนื่องจากข้อมูลอาจถูกลบ)  
 - ระบบโอนเหรียญสามารถบันทึก Log
 
+## ขั้นตอนการติดตั้ง
+```
+1. git clone https://github.com/hellOoSaksit/Interview-Crypto.git
+2. cd Interview-Crypto
+3. npm i
+4. npx prisma generate
+```
+
+
 ## 🔌 API ทั้งหมด
 ```
 Register                  [POST]         : http://localhost:5000/auth/register
