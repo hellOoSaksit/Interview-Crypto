@@ -75,15 +75,15 @@ DATABASE_URL="postgresql://postgres:postgres@localhost:5432/crypto"
    
 ![image](https://github.com/user-attachments/assets/617ed4a5-142c-4079-b959-59a6c91ea794)
 
-2.เลือก Restore
+2. เลือก Restore
 
 ![image](https://github.com/user-attachments/assets/a59d1d69-f0f6-4f3d-9446-7b6de57738ed)
 
-3.เลือกที่อยู่ไฟล์ (อยู่ใน โฟเดอร์ SQL ) และกด Restore
+3. เลือกที่อยู่ไฟล์ (อยู่ใน โฟเดอร์ SQL ) และกด Restore
 
 ![image](https://github.com/user-attachments/assets/cea1add0-9d21-4e4c-b5c6-96846f62e814)
 
-4.ตรวจสอบข้อมูลเริ่มต้น
+4. ตรวจสอบข้อมูลเริ่มต้น
 
 **shasma**  ที่ควนมี
 
